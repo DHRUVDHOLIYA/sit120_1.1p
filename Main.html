@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-witdth, initial-sacle=1.0">
+    <nav align="center">
+        <a href="table.html">Home</a>
+        <a href="contact.html">Contact</a>
+        
+    </nav>
+    <title>My HTML Page</title>
+    <link rel="stylesheet" href="style.css">
+    
+   <!---- <style>
+        body {
+            font-family: Arial;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        table, th, td {
+            border: 3px solid black;
+            padding: 10px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        form {
+            max-width: 300px;
+            margin: 20px auto;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        input[type="submit and pay"]:hover {
+            background-color: #45a049;
+        }
+    </style> -->
+</head>
+<body>
+    <h1>Paid Parking Service Website</h1>
+    
+    
+    <img src="https://jooinn.com/images/pay-parking-zone-sign.jpg" alt="Image Description" height="100" width="200">
+
+    
+    <table>
+        <tr>
+            <th>Vehicle type</th>
+            <th>Pay</th>
+        </tr>
+        <tr>
+            <td>Bicycle</td>
+            <td>Free</td>
+        </tr>
+        <tr>
+            <td>Motorcycles</td>
+            <td>$20(per hour)</td>
+        </tr>
+        <tr>
+            <td>Car</td>
+            <td>$40(per hour)</td>
+        </tr>
+    </table>
+
+    
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" value="">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" value=""><br><br>
+
+        
+
+        Select your vehical type: <br>
+        <input type="radio" id="html" name="type">
+        <label for="Bicycle">Bicycle</label>
+  
+        <input type="radio" id="html" name="type">
+        <label for="Motorcycles">Motorcycles</label>
+        <input type="radio" id="html" name="type">
+        <label for="Car">Car</label> <br><br>
+
+        <label for="dateandtime">Booking Date and time</label>
+        <input type="datetime-local" id="dateandtime" name="dateandtime"><br><br>
+
+        <label for="Payment">Choose payment type:</label>
+        <select id="Payment" name="Payment" size="3" multiple>
+        <option value="CreditCard">Credit Card</option>
+        <option value="DebitCard">Debit Card</option>
+        <option value="Wallet">Wallet</option>
+        </select>
+        <br><br>
+
+
+        <input type="submit" value="Submit and Pay">
+    </form>
+</body>
+</html>
